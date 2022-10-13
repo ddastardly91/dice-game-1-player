@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game - 1 Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>One Player Dice Game</h1>
+    <h2>Roll a 1 and LOSE, Get a score of 20 or more and WIN!</h2>
+
+    <div class="container">
+      <img id="dice" src="assets/dice6.png" alt="dice image" width="400px" />
+      <br />
+      <br />
+      <h2 class="hidden game-end">YOU LOSE! Better luck next time.</h2>
+      <button id="roll">ROLL</button>
+      <button id="restart" class="hidden">RESTART</button>
+      <h3>Score: <span id="currentScore">0</span></h3>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

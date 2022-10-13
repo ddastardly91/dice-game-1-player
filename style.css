@@ -1,0 +1,17 @@
+body {
+  margin: 3% 11%;
+  text-align: center;
+  display: inline;
+}
+
+button {
+  padding: 10px 44px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.hidden {
+  display: none;
+}
