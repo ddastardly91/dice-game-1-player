@@ -3,11 +3,16 @@ const roll = document.querySelector("#roll");
 const restart = document.querySelector("#restart");
 const currentScore = document.querySelector("#currentScore");
 const gameEnd = document.querySelector(".game-end");
+const rollsText = document.querySelector("#rolls");
 let totalScore = 0;
+let rolls = 0;
 
 roll.addEventListener("click", () => {
   let randomNum = Math.floor(Math.random() * 6) + 1;
   dice.src = `assets/dice${randomNum}.png`;
+
+  rolls++;
+  rollsText.textContent = rolls;
 
   totalScore += randomNum;
   currentScore.textContent = totalScore;
@@ -33,6 +38,7 @@ roll.addEventListener("click", () => {
 
 restart.addEventListener("click", () => {
   totalScore = 0;
+  rolls = 0;
   currentScore.textContent = 0;
 
   roll.disabled = false;
